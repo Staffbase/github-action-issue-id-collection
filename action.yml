@@ -1,0 +1,10 @@
+name: "Fetch Tickets"
+description: "Fetches all occurring Tickets in the commits the most recent two tags"
+outputs:
+    tagName:
+        description: "The name of the newly created Tag"
+    tIDs:
+        description: "All the occurring ticket-IDs between the two most recent tags"
+runs:
+    using: "docker"
+    image: "Dockerfile"
