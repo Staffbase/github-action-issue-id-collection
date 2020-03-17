@@ -14,6 +14,8 @@ In your github-workflow, include the following step:
 - name: fetchTicketIds
     id: fetchTicketIds
     uses: Staffbase/github-action-issue-id-collection@master
+    env:
+      TAG_MATCHER: v*-web (default *)
 ```
 
 ---
