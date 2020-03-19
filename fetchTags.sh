@@ -8,7 +8,7 @@ currentTag=$(git describe --tags)
 echo "currentTag: $currentTag"
 
 if [[ -z "$TAG_MATCHER" ]]; then
-   export TAG_MATCHER="*"
+   export TAG_MATCHER=".*"
 fi
 echo "TAG_MATCHER: '$TAG_MATCHER'"
 

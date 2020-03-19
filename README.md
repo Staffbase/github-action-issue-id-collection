@@ -15,7 +15,7 @@ In your github-workflow, include the following step:
     id: fetchTicketIds
     uses: Staffbase/github-action-issue-id-collection@master
     env:
-      TAG_MATCHER: v*-web (default *)
+      TAG_MATCHER: v*-web (default '.*')
 ```
 
 ---
