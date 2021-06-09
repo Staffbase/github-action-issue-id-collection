@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: github-action-issue-id-collection
+  annotations:
+    github.com/project-slug: Staffbase/github-action-issue-id-collection
+  tags:
+    - shell
+spec:
+  type: service
+  lifecycle: production
