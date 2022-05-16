@@ -2,6 +2,9 @@
 
 cd $GITHUB_WORKSPACE
 
+# Fix for: https://github.com/actions/checkout/issues/766 (git CVE-2022-24765)
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
 git fetch --tags
 
 currentTag=$(git describe --tags)
