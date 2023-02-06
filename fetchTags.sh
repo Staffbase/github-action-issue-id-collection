@@ -27,5 +27,5 @@ if [[ "$currentTag" =~ $TAG_MATCHER ]]; then
      paste -sd, -)
 fi
 
-echo "::set-output name=tIDs::$tickets"
-echo "::set-output name=tagName::$currentTag"
+echo "tIDs=$tickets" >> $GITHUB_OUTPUT
+echo "tagName=$currentTag" >> $GITHUB_OUTPUT
