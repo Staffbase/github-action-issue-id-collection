@@ -24,7 +24,7 @@ In your github-workflow, include the following step:
 
 ## How to release
 
-Just edit the DRAFT release in the GitHub UI and publish it with a new git tag.
+Just edit the DRAFT release on the [Releases page](https://github.com/Staffbase/github-action-issue-id-collection/releases)  and publish it with a new git tag.
 
 
 ## Contributing
