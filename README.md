@@ -22,6 +22,11 @@ In your github-workflow, include the following step:
 - `tIDs`: List of Ticket-IDs, seperated by comma
 - `tagName`: Name of the current Tag
 
+## How to release
+
+Just edit the DRAFT release on the [Releases page](https://github.com/Staffbase/github-action-issue-id-collection/releases)  and publish it with a new git tag.
+
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
