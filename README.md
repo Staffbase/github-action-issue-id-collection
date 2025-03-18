@@ -2,7 +2,7 @@
 
 ## Description
 
-This GitHub action goes through every commit between the last two Tags created and collects every Issue-ID/Ticket-ID (e.g. `PAC-123`, `LOL-321`, `ABCD-000`) and filters them to only contain unique IDs. 
+This GitHub action goes through every commit between the last two Tags created and collects every Issue-ID/Ticket-ID (e.g. `PAC-123`, `LOL-321`, `ABCD-000`) and filters them to only contain unique IDs.
 It produces the resulting List of IDs as an output together with the current Tags name.
 
 ## Usage
@@ -12,12 +12,12 @@ In your github-workflow, include the following step:
 ```yaml
 - name: Fetch Ticket Ids
   id: fetchTicketIds
-  uses: Staffbase/github-action-issue-id-collection@master
+  uses: Staffbase/github-action-issue-id-collection@main
   env:
     TAG_MATCHER: v*-web (default '.*')
 ```
 
-## Outputs:
+## Outputs
 
 - `tIDs`: List of Ticket-IDs, seperated by comma
 - `tagName`: Name of the current Tag
@@ -26,7 +26,6 @@ In your github-workflow, include the following step:
 
 Just edit the DRAFT release on the [Releases page](https://github.com/Staffbase/github-action-issue-id-collection/releases)  and publish it with a new git tag.
 
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
@@ -34,7 +33,6 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## License
 
 This project is licensed under the Apache-2.0 License - see the [LICENSE.md](LICENSE) file for details.
-
 
 <table>
   <tr>
